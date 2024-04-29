@@ -32,7 +32,6 @@ app.get("/todos/:userEmail", async (req, res) => {
 
 app.post("/todos", async (req, res) => {
   const { user_email, content, progress, date } = req.body;
-  console.log(user_email, content, progress, date);
   const id = uuidv4();
   try {
     const newToDo = await pool.query(
