@@ -44,7 +44,6 @@ app.post("/todos", async (req, res) => {
 });
 
 // Edit a todo
-
 app.put("/todos/:id", async (req, res) => {
   const { id } = req.params;
   const { user_email, content, progress, date } = req.body;
