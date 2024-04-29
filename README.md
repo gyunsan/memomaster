@@ -26,18 +26,18 @@ The following endpoints are available at [`http://localhost:8000`](http://localh
 
 | Method   | Route                     | Description           |
 | :------: | :------------------------ | :------------------ |
-|  POST    | `/api/users/register`     | Register a new user  |
+|  POST    | `/api/users/signup`     | Register a new user  |
 |  POST    | `/api/users/login`        | Log in an existing user |
 
 #### Resource Management ####
 
 | Method   | Route                       | Description         | Requires Auth? |
 | :------: | :-------------------------- | :------------------ | :-----------: |
-|  GET    | `/api/resources`            | Get all resources   |      No       |
-|  GET    | `/api/resources/:id`        | Get a single resource by ID |   Yes          |
-|  POST   | `/api/resources`            | Add a new resource  |    Yes        |
-|  PUT    | `/api/resources/:id`        | Edit an existing resource by ID |   Yes          |
-|  DELETE | `/api/resources/:id`        | Remove a resource by ID |   Yes          |
+|  GET    | `/todos/`            | Get all notes   |      Yes       |
+|  GET    | `/todos/:userEmail`        | Get a single note by user email |   Yes          |
+|  POST   | `/api/todos`            | Creates a new Todo item with a generated UUID identifier and saves it into the database.  |    Yes        |
+|  PUT    | `/api/todos/:id`        | Edit an existing note by UUID  |   Yes          |
+|  DELETE | `/api/todos/:id`        | Remove a note by UUID |   Yes          |
 
 ## Testing
 
