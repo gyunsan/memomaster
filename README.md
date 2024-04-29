@@ -10,13 +10,15 @@ This is a simple full-stack application built using React for the frontend, Expr
 
 ## Getting Started
 
-1. **Clone** this repository: `git clone https://github.com/<username>/react-app-server.git`
+1. **Clone** this repository: `git clone [https://github.com/<username>/react-app-server.git](https://github.com/gyunsan/memomaster.git)`
 2. **Install Dependencies**: `npm install`
 3. **Create a New Database** in PostgreSQL and update the connection string in `config/dbConfig.js`.
 4. **Run Migrations** to create tables: `npx sequelize db:migrate`
 5. **Seed Sample Data** (optional): `npx sequelize db:seed:all`
-6. **Start Development Environment**: `npm run dev`
+6. **Start the Application**: `npm start`
 7. Open your browser and navigate to [`http://localhost:3000`](http://localhost:3000).
+8. **Start the Server**: `npm start`
+9. Open your browser and navigate to [`http://localhost:8000`](http://localhost:8000).
 
 ## Backend API Endpoints
 
